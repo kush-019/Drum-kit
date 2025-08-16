@@ -63,6 +63,7 @@ switch (buttonInnerHTML)
 document.addEventListener("keydown",function (event)
 { 
   makesound(event.key);
+  animation(event.key);
 }); 
 
 function makesound(key)
@@ -124,5 +125,6 @@ function makesound(key)
 { 
   activeButton.classList.remove("pressed")
 },100);
+
 
  }
